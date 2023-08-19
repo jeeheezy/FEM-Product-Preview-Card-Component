@@ -1,0 +1,118 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cream);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 22rem;
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    background-color: var(--white);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 0.87rem;
+    margin: 0;
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    margin: 0.8rem 0;
+    line-height: 0.9;
+    font-size: 2.1rem;
+    color: var(--very-dark-blue)
+}
+
+.description {
+    color: var(--dark-grayish-blue);
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+}
+
+h3 {
+    color: var(--dark-cyan);
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 2.1rem;
+    margin: 0.9rem 0;
+}
+
+.original-price {
+    display: inline-block;
+    text-decoration: line-through;
+    vertical-align: 38%;
+    margin: 0 0 0 1rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button {
+    align-self: center;
+    background-color: var(--dark-cyan);
+    width: 98%;
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+.button-text {
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: hsl(157, 38%, 15%);
+}
+
+@media (min-width: 41rem) {
+    .card {
+        flex-direction: row;
+        max-width: 40rem;
+    }
+}
